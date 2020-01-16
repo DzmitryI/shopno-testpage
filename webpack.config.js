@@ -22,9 +22,15 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!sass-loader'
+      },
     ],
   },
   plugins: [new HtmlWebpackPlugin({
-    title: 'ShopNo'
+    title: 'ShopNo',
+    template: './src/screens/index.html',
+    meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
   })],
 };
