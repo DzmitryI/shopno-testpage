@@ -1,8 +1,11 @@
 @import 'fonts';
 
 body {
+  margin: 0 auto;
   max-width: 1440px;
   width: 100%;
+  background: no-repeat center center;
+  background-image: url("../assets/images/background.jpg");
 }
 .container {
   width: 100%;
@@ -319,7 +322,6 @@ h1, h2, h3 {
 .main-sectionTeam {
   height: 1206px;
   background-color: #FFFFFF;
-  border: 1px solid black;
 }
 .main-sectionTeam-title {
   padding-top: 92px;
@@ -454,12 +456,19 @@ h1, h2, h3 {
 }
 .footer {
   height: 1403px;
-  border: 1px solid black;
+}
+.footer-brands {
+  margin: 0 auto;
+  margin-top: 108px;
+  margin-bottom: 228px;
+  max-width: 1133px;
+  height: 172px;
+  background: no-repeat center center;
+  background-image: url("../assets/images/brands.png");
 }
 .footer-inner {
   display: flex;
   justify-content: space-around;
-  padding-top: 380px;
   max-width: 1135px;
   margin: 0 auto;
   margin-bottom: 123px;
