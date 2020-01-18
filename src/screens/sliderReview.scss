@@ -1,0 +1,64 @@
+.main-sectionTheySays-content-inner {
+  max-width: 500px;
+  height: 195px;
+  margin-top: 100px;
+  margin-left: 85px;
+}
+.prev-inner,
+.prev-next {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53px;
+  height: 53px;
+  background-color: #ffffff;
+  top: 392px;
+  border-radius: 1px;
+  box-shadow: 6px 2px 11px rgba(0, 0, 0, .1);
+}
+.prev-next {
+  right: 0;
+}
+.prev-inner {
+  right: 82px;
+}
+.prev-inner:hover,
+.prev-next:hover {
+  background-color: #71f6eb;
+}
+.prev,
+.next {
+  cursor: pointer;
+  color: #b2b2b2;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.prev:hover,
+.next:hover {
+  color: #25514d;
+}
+.main-sectionTheySays-content-inner {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}

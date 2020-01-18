@@ -1,4 +1,7 @@
 @import 'fonts';
+@import 'slider';
+@import 'slider1';
+@import 'sliderReview';
 
 body {
   margin: 0 auto;
@@ -87,32 +90,24 @@ h1, h2, h3 {
   background-color: #F8FAFA;
 }
 .sectionAboutUs-title {
-  padding-top: 130px;
+  padding-top: 129px;
   margin-bottom: 17px;
 }
 .sectionAboutUs-subtitle {
-  margin-bottom: 70px;
+  margin-bottom: 147px;
 }
 .sectionAboutUs-inner {
   display: flex;
   justify-content: space-between;
   max-width: 1039px;
+  margin: 0 auto;
 }
 .sectionAboutUs-slader-inner {
+  margin-top: 33px;
   position: relative;
-  width: 480px;
-  height: 413px;
+  width: 479px;
+  height: 412px;
   background-color: #EDEEF0;
-}
-.sectionAboutUs-slader {
-  position: absolute;
-  width: 393px;
-  height: 494px;
-  border: 1px solid black;
-  left: 9%;
-  top: -20px;
-  background: no-repeat center center;
-  background-image: url("../assets/images/slader1.png");
 }
 .sectionAboutUs-content {
   max-width: 474px;
@@ -120,12 +115,13 @@ h1, h2, h3 {
 .sectionAboutUs-content-title1,
 .sectionAboutUs-content-title2,
 .sectionServices-item-title {
-  font-size: 27px;
+  font-size: 20px;
   font-family: "Merriweather-Bold", "MyriadProRegular";
   line-height: 0.8;
   text-align: left;
 }
 .sectionAboutUs-content-title1 {
+  margin: 0;
   margin-bottom: 16px;
 }
 .sectionAboutUs-content-title2 {
@@ -445,26 +441,11 @@ h1, h2, h3 {
   height: 363px;
   background-color: #EAEBED;
 }
-.sectionTheySays-slader {
-  position: absolute;
-  width: 320px;
-  height: 411px;
-  border: 1px solid black;
-  top: -25px;
-  left: 9%;
-  background: no-repeat center center;
-  background-image: url("../assets/images/slader2.png");
-}
 .main-sectionTheySays-content {
+  position: relative;
   background-color: #eaebed;
   width: 666px;
   height: 362px;
-}
-.main-sectionTheySays-content-inner {
-  max-width: 500px;
-  height: 195px;
-  margin-top: 100px;
-  margin-left: 85px;
 }
 .sectionTheySays-text {
   text-align: center;
