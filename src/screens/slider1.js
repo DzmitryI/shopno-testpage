@@ -10,9 +10,7 @@ const sectionTheySaysSlider4 = document.getElementById('sectionTheySays-slider4'
 sectionTheySaysSlider4.src = sectionTheySaysSliderImg;
 
 let slideIndex = 1;
-// const prev = document.getElementById('prev');
 const cols = document.querySelectorAll('.sectionTheySays-slider__item');
-/* Основная функция слайдера */
 function showSlides(ivent) {
   let i;
   let n;
@@ -30,7 +28,6 @@ function showSlides(ivent) {
   } else {
     n = ivent;
   }
-  // const n = ivent;
   const slides = document.getElementsByClassName('sectionTheySays-item');
   const dots = document.getElementsByClassName('sectionTheySays-slider__item');
   if (n > slides.length) {
@@ -48,29 +45,7 @@ function showSlides(ivent) {
   slides[slideIndex - 1].style.display = 'block';
   dots[slideIndex - 1].className += ' active';
 }
-/* Индекс слайда по умолчанию */
-// let slideIndex = 1;
 showSlides(slideIndex);
-// /* eslint-disable */
-// /* Функция увеличивает индекс на 1, показывает следующй слайд */
-// function plusSlide() {
-//   showSlides(slideIndex += 1);
-// }
-
-// /* Функция уменьшяет индекс на 1, показывает предыдущий слайд */
-// function minusSlide() {
-//   showSlides(slideIndex -= 1);
-// }
-
-// /* Устанавливает текущий слайд */
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// prev.addEventListener('click', () => {
-//   // console.log('hello');
-//   showSlides(slideIndex -= 1);
-// });
 
 [].forEach.call(cols, (col) => {
   col.addEventListener('click', showSlides);
