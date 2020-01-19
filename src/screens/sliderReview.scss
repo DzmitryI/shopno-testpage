@@ -1,8 +1,23 @@
 .main-sectionTheySays-content-inner {
   max-width: 500px;
   height: 195px;
-  margin-top: 100px;
+  margin-top: 97px;
   margin-left: 85px;
+}
+.sectionTheySays-title {
+  margin-bottom: 21px;
+}
+.sectionTheySays-text {
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 23px;
+}
+.sectionTheySays-star {
+  text-align: center;
+  color: #f2da3b;
+  height: 15px;
+  line-height: 27px;
+  font-size: 16px;
 }
 .prev-inner,
 .prev-next {
@@ -25,6 +40,7 @@
 }
 .prev-inner:hover,
 .prev-next:hover {
+  cursor: pointer;
   background-color: #71f6eb;
 }
 .prev,

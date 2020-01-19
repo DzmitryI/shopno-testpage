@@ -1,3 +1,4 @@
+import './slider1.scss';
 import sectionTheySaysSliderImg from '../assets/images/slader2.jpg';
 
 const sectionTheySaysSlider1 = document.getElementById('sectionTheySays-slider1');
