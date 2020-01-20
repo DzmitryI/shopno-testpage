@@ -51,3 +51,12 @@
       opacity: 1
   }
 }
+@media (max-width: 1140px) {
+  .sectionTheySays-slider {
+    position: static;
+    margin: -24px auto;
+  }
+  .sectionTheySays-slider-dots {
+    margin-top: 40px;
+  }
+}

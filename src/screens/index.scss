@@ -87,11 +87,11 @@ h1, h2, h3 {
  color: #6ff4e9;
 }
 .header-icon {
+  width: 75px;
+  height: 92px;
   position: absolute;
   left: 78%;
   top: 72%;
-  width: 75px;
-  height: 92px;
   background: no-repeat center center;
   background-image: url("../assets/images/glass.png");
 }
@@ -133,7 +133,7 @@ h1, h2, h3 {
   margin-top: 30px;
   position: relative;
   width: 479px;
-  height: 412px;
+  min-height: 412px;
   background-color: #EDEEF0;
 }
 .sectionAboutUs-content {
@@ -189,7 +189,7 @@ h1, h2, h3 {
   grid-column-gap: 14px;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 1134px;
-  height: 751px;
+  min-height: 751px;
   margin: 0 auto;
 }
 .sectionWorks__item {
@@ -222,7 +222,7 @@ h1, h2, h3 {
   background-image: url("../assets/images/work6.jpg");
 }
 .main-sectionServices {
-  height: 1619px;
+  min-height: 1619px;
   background-color: #F9FBFB;
 }
 .sectionServices-title {
@@ -247,7 +247,6 @@ h1, h2, h3 {
   font-size: 17px;
 }
 .main-sectionTeam-inner {
-  margin: 0 auto;
   max-width: 1135px;
   height: 892px;
   display: grid;
@@ -255,6 +254,7 @@ h1, h2, h3 {
   grid-row-gap: 15px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
 }
 .sectionTeam__item {
   background: no-repeat center center;
@@ -342,7 +342,7 @@ h1, h2, h3 {
   background-image: url("../assets/images/team5.jpg");
 }
 .main-sectionTheySays {
-  height: 924px;
+  min-height: 924px;
   background-color: #F9FBFB;
 }
 .main-sectionTheySays-title {
@@ -357,22 +357,22 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 1136px;
+  max-width: 1136px;
 }
 .sectionTheySays-slader-inner {
   position: relative;
   width: 393px;
-  height: 362px;
+  min-height: 362px;
   background-color: #EAEBED;
 }
 .main-sectionTheySays-content {
   position: relative;
   background-color: #eaebed;
   width: 666px;
-  height: 362px;
+  min-height: 362px;
 }
 .footer {
-  height: 1403px;
+  min-height: 1403px;
 }
 .footer-brands {
   margin: 0 auto;
@@ -520,5 +520,117 @@ textarea {
 .footer-icon-social:hover {
   color: #070e0d;
 }
-
-
+@media (max-width: 1140px) {
+  .sectionAboutUs-inner {
+    justify-content: space-around;
+  }
+  .sectionAboutUs-slader-inner {
+    width: 48%;
+  }
+  .sectionAboutUs-content {
+    width: 48%;
+  }
+  .sectionTeam__item2-quote {
+    width: 90%;
+  }
+  .sectionTeam__item2-quote-inner {
+    margin: 0 auto;
+    padding-top: 38px;
+  }
+  .main-sectionTheySays-inner {
+    justify-content: space-around;
+  }
+  .sectionTheySays-slader-inner {
+    width: 40%;
+  }
+  .main-sectionTheySays-content {
+    width: 55%;
+  }
+  .in-touch-form {
+    width: 50%;
+  }
+  .footer-desc {
+    width: 45%;
+  }
+  input,
+  textarea {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .main-sectionWorks {
+    height: 1380px;
+  }
+  .sectionWorks-inner {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6px;
+  }
+  .main-sectionTeam-inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .main-sectionTeam {
+    height: 1760px;
+  }
+  .main-sectionTeam-inner {
+    height: 1365px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1px
+  }
+}
+@media (max-width: 600px) {
+  .header-section {
+    margin-bottom: 70px;
+  }
+  .header-icon {
+    display: none;
+  }
+  .main-sectionAboutUs {
+    height: auto;
+  }
+  .sectionAboutUs-inner {
+    flex-wrap: wrap;
+  }
+  .sectionAboutUs-slader-inner {
+    width: 95%;
+  }
+  .sectionAboutUs-content {
+    width: 65%;
+  }
+  .main-sectionWorks {
+    height: auto;
+  }
+  .sectionWorks-inner {
+    grid-template-columns: 1fr;
+  }
+  .sectionWorks__item {
+    max-width: none;
+  }
+  .sectionWorks__item:hover {
+    max-width: none;
+  }
+  .main-sectionTheySays-inner {
+    flex-wrap: wrap;
+  }
+  .main-sectionTheySays {
+    height: 1255px;
+  }
+  .sectionTheySays-slader-inner {
+    width: 95%;
+    margin-bottom: 12px;
+  }
+  .main-sectionTheySays-content {
+    width: 95%;
+  }
+  .footer-inner {
+    flex-wrap: wrap;
+  }
+  .in-touch-form {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .footer-desc {
+    width: 90%;
+  }
+}
