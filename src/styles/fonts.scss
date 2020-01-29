@@ -1,0 +1,77 @@
+@font-face{
+  font-family: 'Merriweather-Bold';
+    src: url("./assets/fonts/Merriweather-Bold.ttf") format("truetype");
+}
+@font-face{
+	font-family: 'Merriweather-Regular';
+    src: url("./assets/fonts/Merriweather-Regular.ttf") format("truetype");
+}
+@font-face{
+	font-family: 'Merriweather-Italic';
+    src: url("./assets/fonts/Merriweather-Italic.ttf") format("truetype");
+}
+@font-face{
+	font-family: 'Montserrat-Bold';
+    src: url("./assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face{
+	font-family: 'Montserrat-Regular';
+    src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face{
+	font-family: 'Raleway-Medium';
+    src: url("./assets/fonts/Raleway-Medium.ttf") format("truetype");
+}
+@font-face{
+	font-family: 'Raleway-Regular';
+    src: url("./assets/fonts/Raleway-Regular.ttf") format("truetype");
+}
+@font-face{
+	font-family: 'MyriadRegular';
+    src: url("./assets/fonts/MyriadRegular.ttf") format("truetype");
+}
+@font-face{
+	font-family: 'MyriadProRegular';
+    src: url("./assets/fonts/MyriadPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('./assets/fonts/fontello.eot?9326759');
+  src: url('./assets/fonts/fontello.eot?9326759#iefix') format('embedded-opentype'),
+       url('./assets/fonts/fontello.woff2?9326759') format('woff2'),
+       url('./assets/fonts/fontello.woff?9326759') format('woff'),
+       url('./assets/fonts/fontello.ttf?9326759') format('truetype'),
+       url('./assets/fonts/fontello.svg?9326759#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+
+  font-variant: normal;
+  text-transform: none;
+
+  line-height: 1em;
+
+  margin-left: .2em;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before { content: '\e800'; }
+.icon-twitter:before { content: '\f099'; }
+.icon-facebook:before { content: '\f09a'; }
+.icon-dribbble:before { content: '\f17d'; }
+.icon-pinterest:before { content: '\f231'; }

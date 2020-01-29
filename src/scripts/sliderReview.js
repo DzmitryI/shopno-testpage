@@ -1,4 +1,4 @@
-import './sliderReview.scss';
+import '../styles/sliderReview.scss';
 
 const prevInner = document.querySelector('.prev-inner');
 const prevNext = document.querySelector('.prev-next');

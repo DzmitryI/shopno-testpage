@@ -1,4 +1,4 @@
-import './modalPage.scss';
+import '../styles/modalPage.scss';
 import work1 from '../assets/images/work1.jpg';
 import work2 from '../assets/images/work2.jpg';
 import work3 from '../assets/images/work3.jpg';

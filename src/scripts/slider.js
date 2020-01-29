@@ -1,4 +1,4 @@
-import './slider.scss';
+import '../styles/slider.scss';
 import slider1Img from '../assets/images/slader1.jpg';
 
 const slider1 = document.getElementById('slider1');

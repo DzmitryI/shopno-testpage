@@ -7,7 +7,6 @@ module.exports = {
     filename: 'app.bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  devtool: 'source-map',
   module: {
     rules: [
       { enforce: 'pre', test: /\.js$/, loader: 'eslint-loader' },
@@ -42,7 +41,7 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({
     title: 'ShopNo',
-    template: './src/screens/index.html',
+    template: './src/index.html',
     meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
   })],
 };

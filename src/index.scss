@@ -1,11 +1,11 @@
-@import 'fonts';
+@import './styles/fonts.scss';
 
 body {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
   background: no-repeat center center;
-  background-image: url("../assets/images/background.jpg");
+  background-image: url("./assets/images/background.jpg");
 }
 .container {
   width: 100%;
@@ -93,7 +93,7 @@ h1, h2, h3 {
   left: 78%;
   top: 72%;
   background: no-repeat center center;
-  background-image: url("../assets/images/glass.png");
+  background-image: url("./assets/images/glass.png");
 }
 .title {
   font-size: 38px;
@@ -204,22 +204,22 @@ h1, h2, h3 {
   border: 2px solid #6FF6EB;
 }
 .sectionWorks__item1 {
-  background-image: url("../assets/images/work1.jpg");
+  background-image: url("./assets/images/work1.jpg");
 }
 .sectionWorks__item2 {
-  background-image: url("../assets/images/work2.jpg");
+  background-image: url("./assets/images/work2.jpg");
 }
 .sectionWorks__item3 {
-  background-image: url("../assets/images/work3.jpg");
+  background-image: url("./assets/images/work3.jpg");
 }
 .sectionWorks__item4 {
-  background-image: url("../assets/images/work4.jpg");
+  background-image: url("./assets/images/work4.jpg");
 }
 .sectionWorks__item5 {
-  background-image: url("../assets/images/work5.jpg");
+  background-image: url("./assets/images/work5.jpg");
 }
 .sectionWorks__item6 {
-  background-image: url("../assets/images/work6.jpg");
+  background-image: url("./assets/images/work6.jpg");
 }
 .main-sectionServices {
   min-height: 1619px;
@@ -265,11 +265,11 @@ h1, h2, h3 {
 }
 .sectionTeam__item1,
 .sectionTeam__item6 {
-  background-image: url("../assets/images/team1_6.jpg");
+  background-image: url("./assets/images/team1_6.jpg");
 }
 .sectionTeam__item2 {
   position: relative;
-  background-image: url("../assets/images/team2.jpg");
+  background-image: url("./assets/images/team2.jpg");
 }
 .sectionTeam__item2-quote {
   width: 335px;
@@ -333,13 +333,13 @@ h1, h2, h3 {
   color: #bbb8b9;
 }
 .sectionTeam__item3 {
-  background-image: url("../assets/images/team3.jpg");
+  background-image: url("./assets/images/team3.jpg");
 }
 .sectionTeam__item4 {
-  background-image: url("../assets/images/team4.jpg");
+  background-image: url("./assets/images/team4.jpg");
 }
 .sectionTeam__item5 {
-  background-image: url("../assets/images/team5.jpg");
+  background-image: url("./assets/images/team5.jpg");
 }
 .main-sectionTheySays {
   min-height: 924px;
@@ -381,7 +381,7 @@ h1, h2, h3 {
   max-width: 1133px;
   height: 172px;
   background: no-repeat center center;
-  background-image: url("../assets/images/brands.png");
+  background-image: url("./assets/images/brands.png");
 }
 .footer-inner {
   display: flex;
@@ -475,7 +475,7 @@ textarea {
   height: 224px;
   background-color: #ffffff;
   background: no-repeat center center;
-  background-image: url("../assets/images/map.jpg");
+  background-image: url("./assets/images/map.jpg");
   margin: 0 auto;
 }
 .footer-end {

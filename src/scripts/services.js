@@ -1,4 +1,4 @@
-import './services.scss';
+import '../styles/services.scss';
 import service1Img from '../assets/images/service1.jpg';
 import service2Img from '../assets/images/service2.jpg';
 import service3Img from '../assets/images/service3.jpg';

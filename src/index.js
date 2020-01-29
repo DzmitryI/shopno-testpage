@@ -1,6 +1,6 @@
-import './screens/index.scss';
-import './screens/slider';
-import './screens/slider1';
-import './screens/sliderReview';
-import './screens/modalPage';
-import './screens/services';
+import './index.scss';
+import './scripts/slider';
+import './scripts/slider1';
+import './scripts/sliderReview';
+import './scripts/modalPage';
+import './scripts/services';
