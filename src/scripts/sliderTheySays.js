@@ -1,30 +1,30 @@
-import '../styles/slider.scss';
-import slide1Img from '../assets/images/slader1.jpg';
+import '../styles/sliderTheySays.scss';
+import slide1Img from '../assets/images/slader2.jpg';
 
-const slide1 = document.querySelector('.slider__item--slide1');
+const slide1 = document.querySelector('.theysays__item--slide1');
 slide1.src = slide1Img;
-const slide2 = document.querySelector('.slider__item--slide2');
+const slide2 = document.querySelector('.theysays__item--slide2');
 slide2.src = slide1Img;
-const slide3 = document.querySelector('.slider__item--slide3');
+const slide3 = document.querySelector('.theysays__item--slide3');
 slide3.src = slide1Img;
-const slide4 = document.querySelector('.slider__item--slide4');
+const slide4 = document.querySelector('.theysays__item--slide4');
 slide4.src = slide1Img;
 
 let slideIndex = 1;
-const slides = document.querySelectorAll('.slider__item');
-const dots = document.querySelectorAll('.dots--slide');
+const slides = document.querySelectorAll('.theysays__item');
+const dots = document.querySelectorAll('.theysays__dots--slide');
 
 function showSlides(ivent) {
   let i;
   let n;
   if (typeof ivent !== 'number') {
-    if (ivent.target.classList[0] === 'dots--slide1') {
+    if (ivent.target.classList[0] === 'theysays__dots--slide1') {
       n = 1;
-    } else if (ivent.target.classList[0] === 'dots--slide2') {
+    } else if (ivent.target.classList[0] === 'theysays__dots--slide2') {
       n = 2;
-    } else if (ivent.target.classList[0] === 'dots--slide3') {
+    } else if (ivent.target.classList[0] === 'theysays__dots--slide3') {
       n = 3;
-    } else if (ivent.target.classList[0] === 'dots--slide4') {
+    } else if (ivent.target.classList[0] === 'theysays__dots--slide4') {
       n = 4;
     }
     slideIndex = n;
@@ -46,7 +46,6 @@ function showSlides(ivent) {
   slides[slideIndex - 1].style.display = 'block';
   dots[slideIndex - 1].className += ' active';
 }
-
 showSlides(slideIndex);
 
 [].forEach.call(dots, (col) => {

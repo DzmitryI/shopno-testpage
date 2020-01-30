@@ -1,26 +1,28 @@
-.main-sectionTheySays-content-inner {
+.content__inner {
   max-width: 500px;
   height: 195px;
   margin-top: 97px;
   margin-left: 85px;
 }
-.sectionTheySays-title {
+.content__text {
   margin-bottom: 21px;
+  text-align: center;
 }
-.sectionTheySays-text {
+.theysays__text {
   line-height: 27px;
   text-align: center;
   margin-bottom: 23px;
 }
-.sectionTheySays-star {
+.content--star {
   text-align: center;
   color: #f2da3b;
   height: 15px;
   line-height: 27px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
 }
-.prev-inner,
-.prev-next {
+.prev__inner,
+.prev__next {
   position: absolute;
   display: flex;
   align-items: center;
@@ -32,14 +34,14 @@
   border-radius: 1px;
   box-shadow: 6px 2px 11px rgba(0, 0, 0, .1);
 }
-.prev-next {
+.prev__next {
   right: 0;
 }
-.prev-inner {
+.prev__inner {
   right: 82px;
 }
-.prev-inner:hover,
-.prev-next:hover {
+.prev__inner:hover,
+.prev__next:hover {
   cursor: pointer;
   background-color: #71f6eb;
 }
@@ -56,7 +58,7 @@
 .next:hover {
   color: #25514d;
 }
-.main-sectionTheySays-content-inner {
+.content__inner {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -79,7 +81,7 @@
   }
 }
 @media (max-width: 1140px) {
-  .main-sectionTheySays-content-inner {
+  .content__inner {
     padding-top: 97px;
     margin: 0 auto;
   }

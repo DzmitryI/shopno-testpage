@@ -1,11 +1,11 @@
 import '../styles/sliderReview.scss';
 
-const prevInner = document.querySelector('.prev-inner');
-const prevNext = document.querySelector('.prev-next');
+const prevInner = document.querySelector('.prev__inner');
+const prevNext = document.querySelector('.prev__next');
 let slideIndex = 1;
 function showSlides(n) {
   let i;
-  const slides = document.getElementsByClassName('main-sectionTheySays-content-inner');
+  const slides = document.getElementsByClassName('content__inner');
   if (n > slides.length) {
     slideIndex = 1;
   }

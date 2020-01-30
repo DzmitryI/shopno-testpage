@@ -6,46 +6,48 @@ import service4Img from '../assets/images/service4.jpg';
 import service5Img from '../assets/images/service5.jpg';
 import service6Img from '../assets/images/service6.jpg';
 
-const service1 = document.querySelector('.sectionServices__item1-img');
+const service1 = document.querySelector('.services__item1--img');
 service1.src = service1Img;
-const service2 = document.querySelector('.sectionServices__item2-img');
+const service2 = document.querySelector('.services__item2--img');
 service2.src = service2Img;
-const service3 = document.querySelector('.sectionServices__item3-img');
+const service3 = document.querySelector('.services__item3--img');
 service3.src = service3Img;
-const service4 = document.querySelector('.sectionServices__item4-img');
+const service4 = document.querySelector('.services__item4--img');
 service4.src = service4Img;
-const service5 = document.querySelector('.sectionServices__item5-img');
+const service5 = document.querySelector('.services__item5--img');
 service5.src = service5Img;
-const service6 = document.querySelector('.sectionServices__item6-img');
+const service6 = document.querySelector('.services__item6--img');
 service6.src = service6Img;
 
-function LinkClick({ target }) {
-  switch (target.classList[0]) {
-    case 'sectionServices__item1-link':
-      document.querySelector('.sectionServices__item1-img').style.opacity = '1';
-      document.querySelector('.sectionServices__item1-inner').style.visibility = 'hidden';
+function linkClick({ target }) {
+  const val = target.classList[0];
+  switch (val) {
+    case 'services__item1__link':
+      document.querySelector('.services__item1--img').style.opacity = '1';
+      document.querySelector('.services__item1__inner').style.visibility = 'hidden';
+      document.querySelector(`${val}`).style.visibility = 'hidden';
       break;
-    case 'sectionServices__item2-link':
-      document.querySelector('.sectionServices__item2-img').style.opacity = '1';
+    case 'services__item2__link':
+      document.querySelector('.services__item2--img').style.opacity = '1';
       break;
-    case 'sectionServices__item3-link':
-      document.querySelector('.sectionServices__item3-img').style.opacity = '1';
+    case 'services__item3__link':
+      document.querySelector('.services__item3--img').style.opacity = '1';
       break;
-    case 'sectionServices__item4-link':
-      document.querySelector('.sectionServices__item4-img').style.opacity = '1';
+    case 'services__item4__link':
+      document.querySelector('.services__item4--img').style.opacity = '1';
       break;
-    case 'sectionServices__item5-link':
-      document.querySelector('.sectionServices__item5-img').style.opacity = '1';
+    case 'services__item5__link':
+      document.querySelector('.services__item5--img').style.opacity = '1';
       break;
-    case 'sectionServices__item6-link':
-      document.querySelector('.sectionServices__item6-img').style.opacity = '1';
+    case 'services__item6__link':
+      document.querySelector('.services__item6--img').style.opacity = '1';
       break;
     default:
       break;
   }
 }
 
-const service = document.querySelectorAll('.sectionServices__item-link');
+const service = document.querySelectorAll('.services__item__link');
 [].forEach.call(service, (col) => {
-  col.addEventListener('click', LinkClick);
+  col.addEventListener('click', linkClick);
 });

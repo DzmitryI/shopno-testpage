@@ -6,50 +6,48 @@ import work4 from '../assets/images/work4.jpg';
 import work5 from '../assets/images/work5.jpg';
 import work6 from '../assets/images/work6.jpg';
 
+const modal = document.querySelector('.modal');
+const modalOverlay = document.querySelector('.modal__overlay');
+
 function closeButtonClick(event) {
-  const modal = document.querySelector('#modal');
-  const modalOverlay = document.querySelector('#modal-overlay');
   modal.classList.toggle('closed');
   modalOverlay.classList.toggle('closed');
   event.stopImmediatePropagation();
 }
 
 function cheatsheetLinkClick({ target }) {
-  const modalPage = document.getElementById('modal-guts-img');
+  const modalPage = document.querySelector('.modal__guts--img');
   switch (target.classList[0]) {
-    case 'sectionWorks__item1':
+    case 'works__item1':
       modalPage.src = work1;
       break;
-    case 'sectionWorks__item2':
+    case 'works__item2':
       modalPage.src = work2;
       break;
-    case 'sectionWorks__item3':
+    case 'works__item3':
       modalPage.src = work3;
       break;
-    case 'sectionWorks__item4':
+    case 'works__item4':
       modalPage.src = work4;
       break;
-    case 'sectionWorks__item5':
+    case 'works__item5':
       modalPage.src = work5;
       break;
-    case 'sectionWorks__item6':
+    case 'works__item6':
       modalPage.src = work6;
       break;
     default:
       break;
   }
-  const modal = document.querySelector('#modal');
-  const modalOverlay = document.querySelector('#modal-overlay');
   modal.classList.toggle('closed');
   modalOverlay.classList.toggle('closed');
   modal.addEventListener('click', closeButtonClick);
+  modalOverlay.addEventListener('click', closeButtonClick);
 }
 
-const modalPage = document.querySelectorAll('.sectionWorks__item');
+const modalPage = document.querySelectorAll('.works__item');
 [].forEach.call(modalPage, (col) => {
   col.addEventListener('click', cheatsheetLinkClick);
 });
-const modal = document.querySelector('#modal');
-const modalOverlay = document.querySelector('#modal-overlay');
 modal.classList.toggle('closed');
 modalOverlay.classList.toggle('closed');

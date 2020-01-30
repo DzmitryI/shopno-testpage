@@ -1,4 +1,4 @@
-.sectionServices-inner {
+.services__inner {
   margin: 0 auto;
   max-width: 1138px;
   min-height: 1183px;
@@ -7,168 +7,171 @@
   grid-column-gap: 7px;
   grid-row-gap: 12px;
 }
-.sectionServices__item {
+.services__item {
   position: relative;
   background-color: #000000;
 }
-.sectionServices__item-img {
+.services__item--img {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 3;
   opacity: 0.6;
 }
-.sectionServices-item-text {
+.services__item__text {
   font-size: 16px;
   font-family: "Raleway-Regular", "MyriadRegular";
   line-height: 25px;
 }
-.sectionServices__item1-img {
+.services__item1--img {
   opacity: 0;
 }
-.sectionServices__item-inner {
+.services__item__inner {
   position: relative;
   z-index: 4;
   color: #ffffff;
 }
-.sectionServices__item-link {
+.services__item__link {
   display: inline-block;
   font-size: 18px;
   font-family: "Raleway-Medium", "MyriadPRORegular";
   line-height: 0.8;
 }
-.sectionServices__item-link:hover {
+.services__item__link:hover {
   font-size: 20px;
   cursor: pointer;
 }
-.sectionServices__item1-inner {
+.services__item1__inner {
   max-width: 470px;
   height: 304px;
   margin-top: 65px;
   margin-left: 67px;
   color: #000000;
 }
-.sectionServices__item1-title {
+.services__item1__title {
   margin-bottom: 32px;
   letter-spacing: 2px;
 }
-.sectionServices__item1-text {
+.services__item1__text {
   margin-bottom: 68px;
 }
-.sectionServices__item1 {
+.services__item1 {
   grid-column-start: 1;
   grid-column-end: 3;
   max-width: 653px;
   height: 423px;
   background-color: #6ff4e9;
 }
-.sectionServices__item2 {
+.services__item2 {
   max-width: 475px;
   height: 423px;
 }
-.sectionServices__item2-inner {
+.services__item2__inner {
   max-width: 312px;
   height: 180px;
   margin-top: 184px;
   margin-left: 67px;
 }
-.sectionServices__item2-title {
+.services__item2__title {
   margin-bottom: 22px;
 }
-.sectionServices__item2-text {
+.services__item2__text {
   margin-bottom: 54px;
 }
-.sectionServices__item3 {
+.services__item3 {
   grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 3;
   max-width: 653px;
   height: 372px;
 }
-.sectionServices__item3-inner {
+.services__item3__inner {
   max-width: 428px;
   height: 153px;
   margin-top: 166px;
   margin-left: 63px;
 }
-.sectionServices__item3-title {
+.services__item3__title {
   margin-bottom: 20px;
 }
-.sectionServices__item3-text {
+.services__item3__text {
   margin-bottom: 50px;
 }
-.sectionServices__item4 {
+.services__item4 {
   max-width: 475px;
   height: 372px;
 }
-.sectionServices__item4-inner {
+.services__item4__inner {
   max-width: 305px;
   height: 152px;
   margin-top: 163px;
   margin-left: 66px;
 }
-.sectionServices__item4-title {
+.services__item4__title {
   margin-bottom: 24px;
 }
-.sectionServices__item4-text {
+.services__item4__text {
   margin-bottom: 48px;
 }
-.sectionServices__item5 {
+.services__item5 {
   max-width: 473px;
   height: 371px;
 }
-.sectionServices__item5-inner {
+.services__item5__inner {
   max-width: 276px;
   height: 183px;
   margin-top: 130px;
   margin-left: 64px;
 }
-.sectionServices__item5-title {
+.services__item5__title {
   margin-bottom: 24px;
 }
-.sectionServices__item5-text {
+.services__item5__text {
   margin-bottom: 78px;
 }
-.sectionServices__item6 {
+.services__item6 {
   grid-row-start: 3;
   grid-column-start: 2;
   grid-column-end: 4;
   max-width: 652px;
   height: 371px;
 }
-.sectionServices__item6-inner {
+.services__item6__inner {
   max-width: 403px;
   height: 184px;
   margin-top: 130px;
   margin-left: 72px;
 }
-.sectionServices__item6-title {
+.services__item6__title {
   margin-bottom: 24px;
 }
-.sectionServices__item6-text {
+.services__item6__text {
   margin-bottom: 55px;
 }
 @media (max-width: 900px) {
-  .sectionServices__item-inner {
+  .services__item__inner {
     margin: 65px auto;
   }
 }
 @media (max-width: 800px) {
-  .sectionServices-inner {
+  .services__inner {
     grid-template-columns: 1fr;
   }
-  .sectionServices__item1 {
+  .services__item1 {
     grid-column-start: auto;
     grid-column-end: auto;
     max-width: none;
   }
-  .sectionServices__item3 {
+  .services__item1__text {
+    margin-bottom: 15px;
+  }
+  .services__item3 {
     grid-row-start: auto;
     grid-column-start: auto;
     grid-column-end: auto;
     max-width: none;
   }
-  .sectionServices__item6 {
+  .services__item6 {
     grid-row-start: auto;
     grid-column-start: auto;
     grid-column-end: auto;

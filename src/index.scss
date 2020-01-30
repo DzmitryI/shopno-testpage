@@ -21,7 +21,7 @@ h1, h2, h3 {
   background-color: #EFF0F2;
   font-family: "Montserrat-Bold", "MyriadProRegular";
 }
-.header-section {
+.header__section {
   margin: 0 auto;
   display: flex;
   max-width: 1138px;
@@ -30,7 +30,7 @@ h1, h2, h3 {
   padding-top: 62px;
   margin-bottom: 192px;
 }
-.logo-inner {
+.logo {
   width: 102px;
   height: 39px;
   border: 5px solid black;
@@ -38,40 +38,40 @@ h1, h2, h3 {
   align-items: center;
   justify-content: center;
 }
-.logo {
+.logo__caption {
   font-size: 17px;
 }
-.logo-span {
+.logo--span {
   font-size: 19px;
   color: #77EFE5;
 }
 .nav {
   margin-top: 10px;
 }
-.trigger {
+.nav--trigger {
   display: inline-block;
   margin: 3px;
   cursor: pointer;
 }
-.trigger i {
+.nav--trigger i {
   display: block;
   width: 30px;
   height: 5px;
   margin: 4px auto;
   background: #222;
 }
-.header-caption-inner {
+.header__caption {
  margin-bottom: 142px;
 }
-.header-caption {
+.caption {
   font-size: 45px;
   letter-spacing: 1.8px;
 }
-.header-caption-span {
+.caption--span {
   background-color: #77EFE5;
   font-family: "Montserrat-Bold", "MyriadProRegular";
 }
-.header-button {
+.header__button {
   display: block;
   margin: auto;
   width: 232px;
@@ -81,12 +81,12 @@ h1, h2, h3 {
   font-family: "Montserrat-Regular", "MyriadRegular";
   letter-spacing: 2px;
 }
-.header-button:hover {
+.header__button:hover {
  cursor: pointer;
  border: 2px solid #6ff4e9;
  color: #6ff4e9;
 }
-.header-icon {
+.header--icon {
   width: 75px;
   height: 92px;
   position: absolute;
@@ -111,56 +111,56 @@ h1, h2, h3 {
   word-spacing: 5px;
   letter-spacing: 0.5px
 }
-.main-sectionAboutUs {
+.aboutus {
   height: 986px;
   background-color: #F8FAFA;
 }
-.sectionAboutUs-title {
+.aboutus__title {
   padding-top: 127px;
   margin-bottom: 15px;
   margin-left: 17px;
 }
-.sectionAboutUs-subtitle {
+.aboutus__subtitle {
   margin-bottom: 152px;
 }
-.sectionAboutUs-inner {
+.aboutus__inner {
   display: flex;
   justify-content: space-between;
   max-width: 1066px;
   margin: 0 auto;
 }
-.sectionAboutUs-slader-inner {
+.aboutus__slider {
   margin-top: 30px;
   position: relative;
   width: 479px;
   min-height: 412px;
   background-color: #EDEEF0;
 }
-.sectionAboutUs-content {
+.aboutus__content {
   max-width: 474px;
 }
-.sectionAboutUs-content-title1,
-.sectionAboutUs-content-title2,
-.sectionServices-item-title {
+.aboutus__content__title1,
+.aboutus__content__title2,
+.services__item__title {
   font-size: 20px;
   font-family: "Merriweather-Bold", "MyriadProRegular";
   line-height: 0.8;
   letter-spacing: 1.3px;
   text-align: left;
 }
-.sectionAboutUs-content-title1 {
+.aboutus__content__title1 {
   margin: 0;
   margin-bottom: 24px;
 }
-.sectionAboutUs-content-title2 {
+.aboutus__content__title2 {
   font-size: 17px;
   margin-top: 19px;
   margin-bottom: 20px;
 }
-.sectionAboutUs-content-text,
-.sectionServices__item1-text,
-.sectionTeam__item2-quote-text,
-.sectionTheySays-text {
+.aboutus__content__text,
+.services__item1__text,
+.quote__text,
+.content__text {
   font-size: 16px;
   font-family: "Raleway-Regular", "MyriadRegular";
   line-height: 28px;
@@ -168,23 +168,23 @@ h1, h2, h3 {
   word-spacing: 0.4px;
   margin: 0;
 }
-.sectionAboutUs-content-text {
+.aboutus__content__text {
   margin-bottom: 36px;
 }
-.main-sectionWorks {
+.works {
   height: 1163px;
   background-color: #ffffff;
 }
-.sectionWorks-title {
+.works__title {
   padding-top: 125px;
   margin-left: 38px;
   margin-bottom: 16px;
 }
-.sectionWorks-subtitle {
+.works__subtitle {
   margin-bottom: 120px;
   font-size: 17px;
 }
-.sectionWorks-inner {
+.works__inner {
   display: grid;
   grid-column-gap: 14px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -192,61 +192,61 @@ h1, h2, h3 {
   min-height: 751px;
   margin: 0 auto;
 }
-.sectionWorks__item {
+.works__item {
   max-width: 371px;
   height: 360px;
   background: no-repeat center center;
 }
-.sectionWorks__item:hover {
+.works__item:hover {
   max-width: 369px;
   height: 358px;
   cursor: pointer;
   border: 2px solid #6FF6EB;
 }
-.sectionWorks__item1 {
+.works__item1 {
   background-image: url("./assets/images/work1.jpg");
 }
-.sectionWorks__item2 {
+.works__item2 {
   background-image: url("./assets/images/work2.jpg");
 }
-.sectionWorks__item3 {
+.works__item3 {
   background-image: url("./assets/images/work3.jpg");
 }
-.sectionWorks__item4 {
+.works__item4 {
   background-image: url("./assets/images/work4.jpg");
 }
-.sectionWorks__item5 {
+.works__item5 {
   background-image: url("./assets/images/work5.jpg");
 }
-.sectionWorks__item6 {
+.works__item6 {
   background-image: url("./assets/images/work6.jpg");
 }
-.main-sectionServices {
+.services {
   min-height: 1619px;
   background-color: #F9FBFB;
 }
-.sectionServices-title {
+.services__title {
   padding-top: 123px;
   margin-bottom: 14px;
 }
-.sectionServices-subtitle {
+.services__subtitle {
   margin-bottom: 122px;
   font-size: 17px;
 }
-.main-sectionTeam {
+.team {
   height: 1315px;
   background-color: #FFFFFF;
 }
-.main-sectionTeam-title {
+.team__title {
   padding-top: 120px;
   margin-bottom: 14px;
   font-size: 38px;
 }
-.main-sectionTeam-subtitle {
+.team__subtitle {
   margin-bottom: 121px;
   font-size: 17px;
 }
-.main-sectionTeam-inner {
+.team__inner {
   max-width: 1135px;
   height: 892px;
   display: grid;
@@ -256,22 +256,22 @@ h1, h2, h3 {
   grid-template-rows: 1fr 1fr;
   margin: 0 auto;
 }
-.sectionTeam__item {
+.team__item {
   background: no-repeat center center;
 }
-.sectionTeam__item:hover {
+.team__item:hover {
   cursor: pointer;
   border: 2px solid #6FF6EB;
 }
-.sectionTeam__item1,
-.sectionTeam__item6 {
+.team__item1,
+.team__item6 {
   background-image: url("./assets/images/team1_6.jpg");
 }
-.sectionTeam__item2 {
+.team__item2 {
   position: relative;
   background-image: url("./assets/images/team2.jpg");
 }
-.sectionTeam__item2-quote {
+.quote {
   width: 335px;
   height: 241px;
   position: absolute;
@@ -279,7 +279,7 @@ h1, h2, h3 {
   margin-top: 187px;
   margin-left: 18px;
 }
-.sectionTeam__item2-quote:after {
+.quote:after {
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
   border-bottom: 29px solid #6FF6EB;
@@ -291,27 +291,27 @@ h1, h2, h3 {
   top: -22px;
   transform: translateX(-50%);
 }
-.sectionTeam__item2-quote-inner {
+.quote__inner {
   max-width: 243px;
   height: 50px;
   margin-top: 38px;
   margin-left: 32px;
 }
-.sectionTeam__item2-quote-title,
-.sectionTheySays-title {
+.quote__title,
+.content__title {
   font-family: "Merriweather-Bold", "MyriadProRegular";
   margin-bottom: 17px;
   word-spacing: 1px;
 }
-.sectionTeam__item2-quote-title-span,
-.sectionTheySays-title-span {
+.quote__title--span,
+.content__title--span {
   font-family: "Merriweather-Italic", "MyriadProRegular";
 }
-.sectionTeam__item2-quote-text {
+.quote__text {
   margin-bottom: 34px;
   line-height: 24px;
 }
-.sectionTeam__item2-socialList {
+.sociallist {
   display: flex;
   justify-content: space-around;
   max-width: 99px;
@@ -319,7 +319,7 @@ h1, h2, h3 {
   padding: 0;
   list-style-type: none;
 }
-.icon-social {
+.icon--social {
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -329,43 +329,43 @@ h1, h2, h3 {
   height: 100%;
   color: #214946;
 }
-.icon-social:hover {
+.icon--social:hover {
   color: #bbb8b9;
 }
-.sectionTeam__item3 {
+.team__item3 {
   background-image: url("./assets/images/team3.jpg");
 }
-.sectionTeam__item4 {
+.team__item4 {
   background-image: url("./assets/images/team4.jpg");
 }
-.sectionTeam__item5 {
+.team__item5 {
   background-image: url("./assets/images/team5.jpg");
 }
-.main-sectionTheySays {
+.theysays {
   min-height: 924px;
   background-color: #F9FBFB;
 }
-.main-sectionTheySays-title {
+.theysays__title {
   padding-top: 118px;
   margin-bottom: 14px;
 }
-.main-sectionTheySays-subtitle {
+.theysays__subtitle {
   margin-bottom: 161px;
   font-size: 17px;
 }
-.main-sectionTheySays-inner {
+.theysays__inner {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1136px;
 }
-.sectionTheySays-slader-inner {
+.theysays__slader__inner {
   position: relative;
   width: 393px;
   min-height: 362px;
   background-color: #EAEBED;
 }
-.main-sectionTheySays-content {
+.content {
   position: relative;
   background-color: #eaebed;
   width: 666px;
@@ -374,7 +374,7 @@ h1, h2, h3 {
 .footer {
   min-height: 1403px;
 }
-.footer-brands {
+.footer--brands {
   margin: 0 auto;
   margin-top: 108px;
   margin-bottom: 225px;
@@ -383,14 +383,14 @@ h1, h2, h3 {
   background: no-repeat center center;
   background-image: url("./assets/images/brands.png");
 }
-.footer-inner {
+.footer__inner {
   display: flex;
   justify-content: space-around;
   max-width: 1162px;
   margin: 0 auto;
   margin-bottom: 123px;
 }
-.in-touch-form {
+.form {
   width: 615px;
   height: 461px;
   background-color: #445661;
@@ -450,12 +450,12 @@ textarea {
   cursor: pointer;
   background: #bebebe;
 }
-.footer-desc {
+.footer__desc {
   width: 500px;
   height: 461px;
   background-color: #445661;
 }
-.footer-adress {
+.footer__adress {
   margin-top: 31px;
   margin-bottom: 23px;
   padding-left: 32px;
@@ -464,13 +464,13 @@ textarea {
   font-family: "Raleway-Regular", "MyriadRegular";
   color: #B5BCC0;
 }
-.footer-adress li{
+.footer__adress li{
   list-style-type: none;
 }
-.footer-adress li:nth-child(4) {
+.footer__adress li:nth-child(4) {
   margin-bottom: 20px;
 }
-.footer-map {
+.footer__map {
   max-width: 455px;
   height: 224px;
   background-color: #ffffff;
@@ -478,11 +478,11 @@ textarea {
   background-image: url("./assets/images/map.jpg");
   margin: 0 auto;
 }
-.footer-end {
+.end {
   height: 317px;
   background-color: #262B2E;
 }
-.footer-end-title {
+.end__title {
   padding-top: 85px;
   margin-bottom: 14px;
   text-align: center;
@@ -491,23 +491,23 @@ textarea {
   line-height: 25px;
   font-family: "Raleway-Regular", "MyriadRegular";
 }
-.footer-end-socialList {
+.end__socialList {
   display: flex;
   justify-content: space-around;
   max-width: 214px;
   margin: 0 auto;
   padding: 0;
 }
-.footer-end-socialList li {
+.end__socialList li {
   width: 45px;
   height: 40px;
   background-color: #3f4244;
   list-style-type: none;
 }
-.footer-end-socialList li:hover {
+.end__socialList li:hover {
   background-color: #6eeee4;
 }
-.footer-icon-social {
+.end .icon--social {
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -517,39 +517,39 @@ textarea {
   height: 100%;
   color: #bbb8b9;
 }
-.footer-icon-social:hover {
+.end .icon--social:hover {
   color: #070e0d;
 }
 @media (max-width: 1140px) {
-  .sectionAboutUs-inner {
+  .aboutus__inner {
     justify-content: space-around;
   }
-  .sectionAboutUs-slader-inner {
+  .aboutus__slider {
     width: 48%;
   }
-  .sectionAboutUs-content {
+  .aboutus__content {
     width: 48%;
   }
-  .sectionTeam__item2-quote {
+  .quote {
     width: 90%;
   }
-  .sectionTeam__item2-quote-inner {
+  .quote__inner {
     margin: 0 auto;
     padding-top: 38px;
   }
-  .main-sectionTheySays-inner {
+  .theysays__inner {
     justify-content: space-around;
   }
-  .sectionTheySays-slader-inner {
+  .theysays__slader__inner {
     width: 40%;
   }
-  .main-sectionTheySays-content {
+  .content {
     width: 55%;
   }
-  .in-touch-form {
+  .form {
     width: 50%;
   }
-  .footer-desc {
+  .footer__desc {
     width: 45%;
   }
   input,
@@ -558,10 +558,10 @@ textarea {
   }
 }
 @media (max-width: 800px) {
-  .main-sectionWorks {
+  .works {
     height: 1380px;
   }
-  .sectionWorks-inner {
+  .works__inner {
     grid-template-columns: 1fr 1fr;
     grid-gap: 6px;
   }
@@ -569,68 +569,74 @@ textarea {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
-  .main-sectionTeam {
+  .team {
     height: 1760px;
   }
-  .main-sectionTeam-inner {
+  .team__inner {
     height: 1365px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 1px
   }
+  .quote__title {
+    font-size: 15px;
+  }
+  .quote__text {
+    font-size: 12px;
+  }
 }
 @media (max-width: 600px) {
-  .header-section {
+  .header__section {
     margin-bottom: 70px;
   }
-  .header-icon {
+  .header--icon {
     display: none;
   }
-  .main-sectionAboutUs {
+  .aboutus {
     height: auto;
   }
-  .sectionAboutUs-inner {
+  .aboutus__inner {
     flex-wrap: wrap;
   }
-  .sectionAboutUs-slader-inner {
+  .aboutus__slider {
     width: 95%;
   }
-  .sectionAboutUs-content {
+  .aboutus__content {
     width: 65%;
   }
-  .main-sectionWorks {
+  .works {
     height: auto;
   }
-  .sectionWorks-inner {
+  .works__inner {
     grid-template-columns: 1fr;
   }
-  .sectionWorks__item {
+  .works__item {
     max-width: none;
   }
-  .sectionWorks__item:hover {
+  .works__item:hover {
     max-width: none;
   }
-  .main-sectionTheySays-inner {
-    flex-wrap: wrap;
-  }
-  .main-sectionTheySays {
+  .theysays {
     height: 1255px;
   }
-  .sectionTheySays-slader-inner {
+  .theysays__inner {
+    flex-wrap: wrap;
+  }
+  .theysays__slader__inner {
     width: 95%;
     margin-bottom: 12px;
   }
-  .main-sectionTheySays-content {
+  .content {
     width: 95%;
   }
-  .footer-inner {
+  .footer__inner {
     flex-wrap: wrap;
   }
-  .in-touch-form {
+  .form {
     width: 90%;
     margin-bottom: 10px;
   }
-  .footer-desc {
+  .footer__desc {
     width: 90%;
   }
 }
