@@ -37,13 +37,13 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  &--span {
+    font-size: 19px;
+    color: #77EFE5;
+  }
 }
 .logo__caption {
   font-size: 17px;
-}
-.logo--span {
-  font-size: 19px;
-  color: #77EFE5;
 }
 .nav {
   margin-top: 10px;
@@ -66,10 +66,10 @@ h1, h2, h3 {
 .caption {
   font-size: 45px;
   letter-spacing: 1.8px;
-}
-.caption--span {
-  background-color: #77EFE5;
-  font-family: "Montserrat-Bold", "MyriadProRegular";
+  &--span {
+    background-color: #77EFE5;
+    font-family: "Montserrat-Bold", "MyriadProRegular";
+  }
 }
 .header__button {
   display: block;
@@ -80,11 +80,11 @@ h1, h2, h3 {
   font-size: 18px;
   font-family: "Montserrat-Regular", "MyriadRegular";
   letter-spacing: 2px;
-}
-.header__button:hover {
- cursor: pointer;
- border: 2px solid #6ff4e9;
- color: #6ff4e9;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid #6ff4e9;
+    color: #6ff4e9;
+  }
 }
 .header--icon {
   width: 75px;
@@ -196,12 +196,12 @@ h1, h2, h3 {
   max-width: 371px;
   height: 360px;
   background: no-repeat center center;
-}
-.works__item:hover {
-  max-width: 369px;
-  height: 358px;
-  cursor: pointer;
-  border: 2px solid #6FF6EB;
+  &:hover {
+    max-width: 369px;
+    height: 358px;
+    cursor: pointer;
+    border: 2px solid #6FF6EB;
+  }
 }
 .works__item1 {
   background-image: url("./assets/images/work1.jpg");
@@ -258,10 +258,10 @@ h1, h2, h3 {
 }
 .team__item {
   background: no-repeat center center;
-}
-.team__item:hover {
-  cursor: pointer;
-  border: 2px solid #6FF6EB;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid #6FF6EB;
+  }
 }
 .team__item1,
 .team__item6 {
@@ -278,18 +278,18 @@ h1, h2, h3 {
   background-color: #6FF6EB;
   margin-top: 187px;
   margin-left: 18px;
-}
-.quote:after {
-  border-left: 14px solid transparent;
-  border-right: 14px solid transparent;
-  border-bottom: 29px solid #6FF6EB;
-  content: "";
-  height: 0;
-  width: 0;
-  position: absolute;
-  left: 9%;
-  top: -22px;
-  transform: translateX(-50%);
+  &:after {
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 29px solid #6FF6EB;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 9%;
+    top: -22px;
+    transform: translateX(-50%);
+  }
 }
 .quote__inner {
   max-width: 243px;
@@ -328,9 +328,9 @@ h1, h2, h3 {
   width: 100%;
   height: 100%;
   color: #214946;
-}
-.icon--social:hover {
-  color: #bbb8b9;
+  &:hover {
+    color: #bbb8b9;
+  }
 }
 .team__item3 {
   background-image: url("./assets/images/team3.jpg");
@@ -373,15 +373,15 @@ h1, h2, h3 {
 }
 .footer {
   min-height: 1403px;
-}
-.footer--brands {
-  margin: 0 auto;
-  margin-top: 108px;
-  margin-bottom: 225px;
-  max-width: 1133px;
-  height: 172px;
-  background: no-repeat center center;
-  background-image: url("./assets/images/brands.png");
+  &--brands {
+    margin: 0 auto;
+    margin-top: 108px;
+    margin-bottom: 225px;
+    max-width: 1133px;
+    height: 172px;
+    background: no-repeat center center;
+    background-image: url("./assets/images/brands.png");
+  }
 }
 .footer__inner {
   display: flex;
@@ -503,9 +503,9 @@ textarea {
   height: 40px;
   background-color: #3f4244;
   list-style-type: none;
-}
-.end__socialList li:hover {
-  background-color: #6eeee4;
+  &:hover {
+    background-color: #6eeee4;
+  }
 }
 .end .icon--social {
   display: flex;
@@ -516,9 +516,9 @@ textarea {
   width: 100%;
   height: 100%;
   color: #bbb8b9;
-}
-.end .icon--social:hover {
-  color: #070e0d;
+  &:hover {
+    color: #070e0d;
+  }
 }
 @media (max-width: 1140px) {
   .aboutus__inner {

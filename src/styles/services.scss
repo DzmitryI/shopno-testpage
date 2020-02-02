@@ -36,10 +36,10 @@
   font-size: 18px;
   font-family: "Raleway-Medium", "MyriadPRORegular";
   line-height: 0.8;
-}
-.services__item__link:hover {
-  font-size: 20px;
-  cursor: pointer;
+  &:hover {
+    font-size: 20px;
+    cursor: pointer;
+  }
 }
 .services__item1__inner {
   max-width: 470px;
