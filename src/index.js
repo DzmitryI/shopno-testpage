@@ -4,3 +4,4 @@ import './scripts/modalPage';
 import './scripts/services';
 import './scripts/sliderTheySays';
 import './scripts/sliderReview';
+import './scripts/team';
