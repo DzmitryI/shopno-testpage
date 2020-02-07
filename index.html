@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>ShopNo</title>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=acc00d74-7529-4caa-b303-e35f849cbeeb-ключ&lang=ru_RU"
+    type="text/javascript">
+    </script>
 
 <body>
   <header class="header container">
@@ -439,7 +442,7 @@
           <li>Web: www.designagency.net</li>
           <li>E-mail: info@designagency.net</li>
         </ul>
-        <div class="footer__map"></div>
+        <div id="YMapsID" class="footer__map"></div>
       </div>
     </div>
     <div class="end">
@@ -455,6 +458,30 @@
       </ul>
     </div>
   </footer>
+  <script type="text/javascript">
+    ymaps.ready(function () {
+      const myMap = new ymaps.Map("YMapsID", {
+        center: [55.76, 37.64],
+        zoom: 14
+      }, {
+        searchControlProvider: 'yandex#search'
+      }),
+        myGeoObject = new ymaps.GeoObject({
+          geometry: {
+            type: "Point",
+            coordinates: [55.76, 37.64]
+          },
+          properties: {
+          }
+        }, {
+          preset: 'islands#blackStretchyIcon',
+          draggable: true
+        });
+      myMap.geoObjects
+        .add(myGeoObject)
+        .add(myPieChart)
+    });
+  </script>
 <script type="text/javascript" src="app.bundle.js"></script></body>
 
 </html>
