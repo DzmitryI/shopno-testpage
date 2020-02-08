@@ -19,8 +19,8 @@
   opacity: 0.6;
 }
 .items-know-more__text {
-  font-size: 16px;
   font-family: "Raleway-Regular", "MyriadRegular";
+  font-size: 16px;
   line-height: 25px;
 }
 .items-know-more__inner {
@@ -31,8 +31,8 @@
 .items-know-more__link,
 .items-description__link {
   display: inline-block;
-  font-size: 18px;
   font-family: "Raleway-Medium", "MyriadPRORegular";
+  font-size: 18px;
   line-height: 0.8;
   transition: 1s linear;
   &:hover {
@@ -140,7 +140,7 @@
   display: none;
   max-width: 470px;
   height: 304px;
-  margin-top: 65px;
+  margin-top: 63px;
   margin-left: 67px;
   color: #000000;
 }
@@ -148,18 +148,26 @@
 .item4-description__inner,
 .item5-description__inner {
   margin-left: 20px;
+  margin-right: 10px;
 }
 .items-description__title {
-  margin-bottom: 32px;
-  letter-spacing: 2px;
+  font-size: 19px;
+  margin-bottom: 30px;
+  line-height: 1;
+  word-spacing: 5px;
+  letter-spacing: 1px;
 }
 .items-description__text {
-  margin-bottom: 60px;
+  margin-bottom: 69px;
 }
 .item2-description__text,
 .item4-description__text,
 .item5-description__text {
   margin-bottom: 30px;
+}
+.item3-description__text,
+.item6-description__text {
+  margin-bottom: 60px;
 }
 .items-description__link {
   font-size: 24px;
@@ -174,41 +182,44 @@
 }
 @media (max-width: 900px) {
   .items-know-more__inner {
-    margin: 65px auto;
+    margin: 0;
+    max-width: 310px;
+    height: 150px;
   }
   .services__inner {
     grid-template-columns: 1fr;
   }
-  .item1-know-more {
+  .item1-know-more,
+  .item2-know-more,
+  .item3-know-more,
+  .item4-know-more,
+  .item5-know-more,
+  .item6-know-more {
     grid-column-start: auto;
     grid-column-end: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    height: auto;
     max-width: none;
+    width: 90%;
+    margin: 0 auto;
   }
-  .item1-know-more__text {
+  .items-know-more__title {
+    line-height: 1;
     margin-bottom: 15px;
   }
-  .item3-know-more {
-    grid-row-start: auto;
-    grid-column-start: auto;
-    grid-column-end: auto;
-    max-width: none;
-  }
-  .item6-know-more {
-    grid-row-start: auto;
-    grid-column-start: auto;
-    grid-column-end: auto;
-    max-width: none;
-  }
-}
-@media (max-width: 600px) {
-  .items-description__title {
-    line-height: 1;
+  .items-know-more__text {
+    margin-bottom: 20px;
   }
   .items-description__text {
     margin-bottom: 20px;
   }
   .items-description__inner {
     margin-left: 10px;
+    margin-top: 10px;
+    height: auto;
   }
 }
 

@@ -22,8 +22,12 @@
   margin: 0 auto;
 }
 .team__item {
+  position: relative;
   background: no-repeat center center;
   min-height: 440px;
+  &:hover > .quote {
+    display: block;
+  }
 }
 .team__item1,
 .team__item6 {
@@ -60,18 +64,19 @@
   margin-top: 38px;
   margin-left: 32px;
 }
-.quote__title,
-.content__title {
+.quote__title {
+  max-width: 246px;
   font-family: "Merriweather-Bold", "MyriadProRegular";
-  margin-bottom: 17px;
-  word-spacing: 1px;
+  margin-bottom: 19px;
+  margin-left: 7px;
+  word-spacing: 3.1px;
+  letter-spacing: 1px;
 }
-.quote__title--span,
-.content__title--span {
+.quote__title--span {
   font-family: "Merriweather-Italic", "MyriadProRegular";
-}
-.quote__title--span,
-.content__title--span {
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 1px;
   color: #7e7e7e;
 }
 .quote__text {
@@ -138,10 +143,12 @@
   }
 }
 @media (max-width: 600px) {
+  .team__item {
+    margin: 3px;
+  }
+}
+@media (max-width: 400px) {
   .team__inner {
     grid-template-columns: 1fr;
-  }
-  .team__item {
-    margin: 10px;
   }
 }
